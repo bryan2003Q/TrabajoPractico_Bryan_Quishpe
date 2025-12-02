@@ -1,8 +1,13 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}FODA Class Project{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
-{% block title %}FODA Mateo Cobo{% endblock %}
-
-{% block content %}
+    
+</head>
     <div class="foda-header">
         <h1>FODA: MATEO COBO</h1>
         <p>Desarrollador en Formación</p>
@@ -53,4 +58,7 @@
         <a href="/" class="btn-back">← Volver al Tablero</a>
     </div>
     </div>
-{% endblock %}
+</body>
+</html>
+
+    
