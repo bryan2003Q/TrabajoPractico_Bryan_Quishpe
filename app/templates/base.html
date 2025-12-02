@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}FODA Class Project{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-
-    
 </head>
 <body>
     <nav>
@@ -17,7 +15,57 @@
     </nav>
 
     <div class="container">
-        {% block content %}{% endblock %}
-    </div>
+        <h2 style="text-align: center; margin-bottom: 20px; font-size: 1.5em;">Análisis FODA de Donovan Pilicita</h2>
+
+        <table style="width: 100%; border-collapse: collapse;">
+            <thead>
+                <tr style="background-color: #e9e9e9;">
+                    <th style="padding: 12px; border: 1px solid #c0c0c0; text-align: left; width: 25%;">Categoría</th>
+                    <th style="padding: 12px; border: 1px solid #c0c0c0; text-align: left;">Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #c0c0c0; font-weight: bold;">FORTALEZAS</td>
+                    <td style="padding: 12px; border: 1px solid #c0c0c0;">
+                        <ul>
+                            <li>Interés y Adaptabilidad: Gran disposición para aprender continuamente nuevas tecnologías y herramientas, lo cual es fundamental para mi carrera en Ingeniería de Sistemas.</li>
+                            <li>Conocimiento Base : Sobre la estructura web básica (HTML, CSS, Jinja/Flask) y conceptos de arquitectura de software.</li>
+                            <li>Visión Académica: Comprensión de metodologías de análisis como FODA CICD.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #c0c0c0; font-weight: bold;">DEBILIDADES</td>
+                    <td style="padding: 12px; border: 1px solid #c0c0c0;">
+                        <ul>
+                            <li>Dependencia Digital y Distracción: Por la constante interacción con la tecnología, tiendo a pasar mucho tiempo en el celular, distrayéndome a veces con contenido en redes sociales lo que puede afectar la gestión del tiempo.</li>
+                            <li>Experiencia Profesional Limitada: Falta de experiencia formal en el entorno laboral estructurado, siendo un área en desarrollo como estudiante.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #c0c0c0; font-weight: bold;">OPORTUNIDADES</td>
+                    <td style="padding: 12px; border: 1px solid #c0c0c0;">
+                        <ul>
+                            <li>Mercado Laboral: La alta demanda en el sector tecnológico me permite aplicar rápidamente los conocimientos adquiridos.</li>
+                            <li>Desarrollo de Nichos: Oportunidad de especializarme en áreas de tegnología.</li>
+                            <li>Networking: Contacto con profesionales y proyectos que pueden generar futuras colaboraciones o empleo.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #c0c0c0; font-weight: bold;">AMENAZAS</td>
+                    <td style="padding: 12px; border: 1px solid #c0c0c0;">
+                        <ul>
+                            <li>Competencia: La alta y constante competencia en el sector de TI exige una mejora continua en las habilidades.</li>
+                            <li>Presión Académica: El nivel de exigencia del 6to semestre requiere un esfuerzo enfocado para mantener el rendimiento.</li>
+                            <li>Obsolescencia Tecnológica: La velocidad del cambio tecnológico exige aprendizaje constante y rápido.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
 </body>
 </html>
