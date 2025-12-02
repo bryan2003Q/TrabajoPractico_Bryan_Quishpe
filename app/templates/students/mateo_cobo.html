@@ -1,21 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}FODA Mateo cobo{% endblock %}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% extends "base.html" %}
 
-</head>
-<body>
-    <nav>
-        <div class="nav-content">
-            <a href="/" class="brand">Ingeniería de Sistemas de Información</a>
-            <span class="semester">6to Semestre</span>
-        </div>
-    </nav>
+{% block title %}FODA Mateo Cobo{% endblock %}
 
-    <div class="container">
+{% block content %}
     <div class="foda-header">
         <h1>FODA: MATEO COBO</h1>
         <p>Desarrollador en Formación</p>
@@ -66,5 +53,4 @@
         <a href="/" class="btn-back">← Volver al Tablero</a>
     </div>
     </div>
-</body>
-</html>
+{% endblock %}
