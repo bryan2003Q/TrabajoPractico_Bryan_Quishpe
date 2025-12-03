@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}FODA Class Project{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <a href="/" class="brand">Ingeniería de Sistemas de Información</a>
+            <span class="semester">6to Semestre</span>
+        </div>
+    </nav>
+
+    <div class="container">
+        {% block content %}
+<h1>FODA: MATEO COBO</h1>
+<p><em>Desarrollador en formación</em></p>
+
+<h2>🟩 Fortalezas</h2>
+<ul>
+    <li>Alta responsabilidad y compromiso con las tareas académicas y proyectos.</li>
+    <li>Interés constante por mejorar y aprender nuevas tecnologías (Spring Boot, análisis de datos, GitHub, redes).</li>
+    <li>Capacidad para trabajar de manera autónoma y resolver problemas investigando.</li>
+    <li>Persistencia para completar proyectos complejos como ConectaEmpleo y sistemas en Packet Tracer.</li>
+    <li>Organización y claridad para estructurar proyectos en capas y metodologías paso a paso.</li>
+</ul>
+
+<h2>🟦 Oportunidades</h2>
+<ul>
+    <li>Profundizar conocimientos en frameworks que ya manejas (Spring Boot, JPA, Thymeleaf).</li>
+    <li>Fortalecer habilidades en análisis de datos, IA y automatización (scraping, dashboards, chatbots).</li>
+    <li>Participar en proyectos colaborativos mediante GitHub para mejorar trabajo en equipo.</li>
+    <li>Construir un portafolio profesional con los proyectos que ya tienes desarrollados.</li>
+    <li>Oportunidad de especializarte en arquitectura de software y microservicios para ampliar tu perfil profesional.</li>
+</ul>
+
+<h2>🟨 Debilidades</h2>
+<ul>
+    <li>Dudas al iniciar proyectos nuevos cuando la documentación es extensa.</li>
+    <li>Dependencia ocasional de guías paso a paso en vez de confiar más en tu criterio propio.</li>
+    <li>Inseguridad inicial en temas nuevos como DevOps o configuraciones avanzadas.</li>
+    <li>Cierta tendencia a sobrepensar cuando no tienes claridad sobre los requisitos.</li>
+</ul>
+
+<h2>🟥 Amenazas</h2>
+<ul>
+    <li>Avance acelerado de tecnologías y frameworks que requieren actualización constante.</li>
+    <li>Competitividad alta en el mercado si no se mantiene una práctica continua.</li>
+    <li>La sobrecarga académica del semestre puede dificultar la construcción del portafolio.</li>
+    <li>Riesgo de estancamiento si no se avanza hacia proyectos colaborativos o de mayor complejidad.</li>
+</ul>
+
+<p><a href="/">← Volver al Tablero</a></p>
+{% endblock %}
+
+    </div>
+</body>
+</html>
